@@ -1,8 +1,16 @@
-WORK TIME TRACKER
+#WORK TIME TRACKER
 
 Organize the time spent with your machine (on Firefox). Work Time Tracker would keep telling you to get back to work until you have spent least amount of time (working while) away from certain blacklisted websites.
 
-BUILD
+*BUILD*
+
+- MakeFile:
+
+ $ cd /path/to/worktimetracker/src
+
+ $ make
+ 
+ The resulting xpi file can be found in `worktimetracker/bin`
 
 - *NIX:
 
@@ -12,21 +20,21 @@ BUILD
 
 - WINDOWS
 
-Just compress the following files found in `src/` into a ZIP file and change its extension to `.xpi` :
+ Just compress the following files into a ZIP file and change its extension to .xpi :
  - content/
  - locale/
  - skin/
  - chrome.manifest
  - install.rdf
 
-INSTALL
+*INSTALL*
 
 1. Tools -> Add-ons
-2. Find the setting menu icon to the left of search box	and select "Install Add-on from file..."
+2. Find the setting menu icon to the left of search box and select "Install Add-on from file..."
 3. Select the .xpi file
 4. Click Install Now & then Restart Now
 
-CONTRIBUTE
+*CONTRIBUTE*
 
 To contribute, you must know:
  - Git (Can be learnt in no more than a day)
@@ -45,7 +53,7 @@ You do that better!
 
 $ git pull https://github.com/asim42/worktime-tracker master
 
-READINGS
+*READINGS*
 
 https://help.github.com/categories/bootcamp
 
