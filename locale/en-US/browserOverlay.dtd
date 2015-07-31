@@ -1,0 +1,5 @@
+<!ENTITY worktimetracker.menu.label            "Work Time Tracker">
+<!ENTITY worktimetracker.menu.accesskey            "l">
+
+<!ENTITY worktimetracker.menuItem1.label            "Say Hi!">
+<!ENTITY worktimetracker.menuItem1.accesskey            "H">

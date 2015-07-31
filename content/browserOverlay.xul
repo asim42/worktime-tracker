@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet type="text/css" href="chrome://global/skin/" ?>
+<?xml-stylesheet type="text/css"
+  href="chrome://worktimetracker/skin/browserOverlay.css" ?>
+
+<!DOCTYPE overlay SYSTEM
+  "chrome://worktimetracker/locale/browserOverlay.dtd">
+
+<overlay id="worktimetracker-browser-overlay"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script type="application/x-javascript"
+    src="chrome://worktimetracker/content/browserOverlay.js" />
+
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="worktimetracker-string-bundle"
+      src="chrome://worktimetracker/locale/browserOverlay.properties" />
+  </stringbundleset>
+
+  <menupopup id="menu_ToolsPopup">
+    <menu id="worktimetracker-hello-menu" label="&worktimetracker.menu.label;"
+      accesskey="&worktimetracker.menu.accesskey;"
+      insertafter="devToolsEndSeparator">
+      <menupopup>
+        <menuitem id="worktimetracker-hello-menu-item"
+          label="&worktimetracker.menuItem1.label;"
+          accesskey="&worktimetracker.menuItem1.accesskey;"
+          oncommand="WorkTimeTrackerChrome.BrowserOverlay.sayHello(event);" />
+      </menupopup>
+    </menu>
+  </menupopup>
+</overlay>
