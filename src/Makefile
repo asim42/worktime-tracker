@@ -11,7 +11,7 @@ profile_dir := worktimetracker-dev
 ZIP := zip
 
 # The target location of the build and build files.
-bin_dir := bin
+bin_dir := ../bin
 
 # The target XPI file.
 xpi_file := $(bin_dir)/$(extension_name).xpi
