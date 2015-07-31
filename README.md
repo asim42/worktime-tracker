@@ -5,6 +5,7 @@ Organize the time spent with your machine (on Firefox). Work Time Tracker would 
 BUILD
 
 $ cd /path/to/worktimetracker
+
 $ zip -r worktimetracker.xpi content/ locale/ skin/ chrome.manifest install.rdf
 
 INSTALL
