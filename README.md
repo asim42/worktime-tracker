@@ -11,7 +11,12 @@ $ zip -r worktimetracker.xpi content/ locale/ skin/ chrome.manifest install.rdf
 
  WINDOWS
 
-Just compress the following files into a ZIP file and change its extension to .xpi
+Just compress the following files into a ZIP file and change its extension to .xpi :
+ - worktimetracker.xpi
+ - content/
+ - locale/
+ - skin/
+ - chrome
 
 INSTALL
 
