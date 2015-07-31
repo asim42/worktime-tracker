@@ -11,7 +11,7 @@ profile_dir := worktimetracker-dev
 ZIP := zip
 
 # The target location of the build and build files.
-bin_dir := ../bin
+bin_dir := bin/
 
 # The target XPI file.
 xpi_file := $(bin_dir)/$(extension_name).xpi
@@ -51,16 +51,16 @@ clean:
 	@echo "Cleanup is done."
 
 # The sources for the XPI file.
-xpi_built := install.rdf \
-             chrome.manifest \
-             $(wildcard content/*.js) \
-             $(wildcard content/*.xul) \
-             $(wildcard content/*.xml) \
-             $(wildcard content/*.css) \
-             $(wildcard skin/*.css) \
-             $(wildcard skin/*.png) \
-             $(wildcard locale/*/*.dtd) \
-             $(wildcard locale/*/*.properties)
+xpi_built := src/install.rdf \
+             src/chrome.manifest \
+             $(wildcard src/content/*.js) \
+             $(wildcard src/content/*.xul) \
+             $(wildcard src/content/*.xml) \
+             $(wildcard src/content/*.css) \
+             $(wildcard src/skin/*.css) \
+             $(wildcard src/skin/*.png) \
+             $(wildcard src/locale/*/*.dtd) \
+             $(wildcard src/locale/*/*.properties)
 
 # This builds everything except for the actual XPI, and then it copies it to the
 # specified profile directory, allowing a quick update that requires no install.
