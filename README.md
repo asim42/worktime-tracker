@@ -4,9 +4,9 @@ Organize the time spent with your machine (on Firefox). Work Time Tracker would 
 
 *BUILD*
 
-- MakeFile:
+- Makefile:
 
- $ cd /path/to/worktimetracker/src
+ $ cd /path/to/worktimetracker
 
  $ make
  
@@ -14,13 +14,13 @@ Organize the time spent with your machine (on Firefox). Work Time Tracker would 
 
 - *NIX:
 
- $ cd /path/to/worktimetracker/src
+ $ cd /path/to/worktimetracker/src/
 
  $ zip -r worktimetracker.xpi content/ locale/ skin/ chrome.manifest install.rdf
 
 - WINDOWS
 
- Just compress the following files into a ZIP file and change its extension to .xpi :
+ Just compress the following files found in worktimetracker/src/ into a ZIP file and change its extension to .xpi :
  - content/
  - locale/
  - skin/
