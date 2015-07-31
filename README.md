@@ -6,18 +6,18 @@ BUILD
 
 - *NIX:
 
- $ cd /path/to/worktimetracker
+ $ cd /path/to/worktimetracker/src
 
  $ zip -r worktimetracker.xpi content/ locale/ skin/ chrome.manifest install.rdf
 
 - WINDOWS
 
-Just compress the following files into a ZIP file and change its extension to .xpi :
- - worktimetracker.xpi
+Just compress the following files found in `src/` into a ZIP file and change its extension to `.xpi` :
  - content/
  - locale/
  - skin/
- - chrome
+ - chrome.manifest
+ - install.rdf
 
 INSTALL
 
