@@ -53,7 +53,7 @@ You do that better!
 
 3. PUSH
 
-$ git pull https://github.com/asim42/worktime-tracker master
+$ git push https://github.com/asim42/worktime-tracker master
 
 *READINGS*
 
