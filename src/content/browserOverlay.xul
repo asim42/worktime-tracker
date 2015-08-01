@@ -24,9 +24,11 @@
       insertafter="devToolsEndSeparator">
       <menupopup>
         <menuitem type="radio" name="worktimetracker-switch-radio"
-          label="&worktimetracker.switch.on.label;" />
+          label="&worktimetracker.switch.on.label;"
+          oncommand="WorkTimeTrackerChrome.BrowserOverlay.switchOn();" />
         <menuitem type="radio" name="worktimetracker-switch-radio"
-          label="&worktimetracker.switch.off.label;" />
+          label="&worktimetracker.switch.off.label;"
+          oncommand="WorkTimeTrackerChrome.BrowserOverlay.switchOff();" />
         <menuseparator />
         <menuitem type="checkbox"
          name="worktimetracker-force-checkbox"
@@ -40,7 +42,7 @@
         <menuitem id="worktimetracker-hello-menu-item"
           label="&worktimetracker.menuItem1.label;"
           accesskey="&worktimetracker.menuItem1.accesskey;"
-          oncommand="WorkTimeTrackerChrome.BrowserOverlay.sayHello(event)"/>
+          oncommand="WorkTimeTrackerChrome.BrowserOverlay.sayHello()"/>
       </menupopup>
     </menu>
   </menupopup>
