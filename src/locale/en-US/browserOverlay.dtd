@@ -6,3 +6,5 @@
 
 <!ENTITY worktimetracker.switch.off.label	"Off">
 <!ENTITY worktimetracker.switch.on.label	"On">
+
+<!ENTITY worktimetracker.force.checkbox.label	"Force">

@@ -28,6 +28,10 @@
         <menuitem type="radio" name="worktimetracker-switch-radio"
           label="&worktimetracker.switch.off.label;" />
         <menuseparator />
+        <menuitem type="checkbox"
+         name="worktimetracker-force-checkbox"
+         label="&worktimetracker.force.checkbox.label;" />
+        <menuseparator />
         <menuitem id="worktimetracker-hello-menu-item"
           label="&worktimetracker.menuItem1.label;"
           accesskey="&worktimetracker.menuItem1.accesskey;"
