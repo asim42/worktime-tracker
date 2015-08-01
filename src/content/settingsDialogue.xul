@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet type="text/css" href="chrome://global/skin/" ?>
+
+<!DOCTYPE overlay SYSTEM
+        "chrome://worktimetracker/locale/settingsDialogue.dtd">
+
+<dialog id="worktimetracker-settings-dialog"
+        title="&worktimetracker.settingsDialog.title;"
+        buttons="accept,cancel"
+        ondialogaccept="return WorkTimeTrackerChrome.settingsDialog.accept();"
+        ondialogcancel="return WorkTimeTrackerChrome.settingsDialog.cancel();"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+
+    <script type="application/x-javascript"
+            src="chrome://worktimetracker/content/settingsDialogue.js" />
+
+    <stringbundleset id="stringbundleset">
+        <stringbundle id="worktimetracker-string-bundle"
+                      src="chrome://worktimetracker/locale/settingsDialogue.properties" />
+    </stringbundleset>
+
+</dialog>

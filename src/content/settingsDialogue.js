@@ -8,19 +8,18 @@ if ("undefined" == typeof(WorkTimeTrackerChrome)) {
 /**
  * Controls the browser overlay for the Hello World extension.
  */
-WorkTimeTrackerChrome.BrowserOverlay = {
+WorkTimeTrackerChrome.settingsDialog = {
   /**
    * Says 'Hello' to the user.
    */
-  sayHello : function(aEvent) {
+  accept : function(aEvent) {
     var stringBundle = document.getElementById("worktimetracker-string-bundle");
     var message = stringBundle.getString("worktimetracker.greeting.label");
 
     window.alert(message);
   },
 
-  showSettings : function(aEvent) {
-      window.open("chrome://worktimetracker/content/settingsDialogue.xul",
-          "worktimetracker-settings-dialogue", "chrome,centerscreen");
+  cancel : function(aEvent) {
+      window.close();
   }
 };

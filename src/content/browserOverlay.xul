@@ -32,10 +32,15 @@
          name="worktimetracker-force-checkbox"
          label="&worktimetracker.force.checkbox.label;" />
         <menuseparator />
+          <menuitem id="worktimetracker-settings-menu-item"
+            label="&worktimetracker.settings.menuItem.label;"
+            accesskey="&worktimetracker.settings.menuItem.accesskey;"
+            oncommand="WorkTimeTrackerChrome.BrowserOverlay.showSettings(event)"/>
+          <menuseparator />
         <menuitem id="worktimetracker-hello-menu-item"
           label="&worktimetracker.menuItem1.label;"
           accesskey="&worktimetracker.menuItem1.accesskey;"
-          oncommand="WorkTimeTrackerChrome.BrowserOverlay.sayHello(event);" />
+          oncommand="WorkTimeTrackerChrome.BrowserOverlay.sayHello(event)"/>
       </menupopup>
     </menu>
   </menupopup>
