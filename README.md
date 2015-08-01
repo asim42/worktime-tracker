@@ -14,9 +14,11 @@ Organize the time spent with your machine (on Firefox). Work Time Tracker would 
 
 - *NIX:
 
- $ cd /path/to/worktimetracker/src/
+ $ cd /path/to/worktimetracker/src
 
- $ zip -r worktimetracker.xpi content/ locale/ skin/ chrome.manifest install.rdf
+ $ zip -r ../bin/worktimetracker.xpi *
+
+ The resulting xpi file can be found in `worktimetracker/bin`
 
 - WINDOWS
 
