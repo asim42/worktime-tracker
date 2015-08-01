@@ -11,10 +11,10 @@ profile_dir := worktimetracker-dev
 ZIP := zip
 
 # The target location of the build and build files.
-bin_dir := bin/
+bin_dir := ../bin/
 
 # The target XPI file.
-xpi_file := $(bin_dir)/$(extension_name).xpi
+xpi_file := $(bin_dir)$(extension_name).xpi
 
 # The type of operating system this make command is running on.
 os_type := $(patsubst darwin%,darwin,$(shell echo $(OSTYPE)))
@@ -34,7 +34,7 @@ else
 endif
 
 # The temporary location where the extension tree will be copied and built.
-build_dir := $(bin_dir)/build
+build_dir := $(bin_dir)build
 
 # This builds the extension XPI file.
 .PHONY: all
@@ -51,16 +51,16 @@ clean:
 	@echo "Cleanup is done."
 
 # The sources for the XPI file.
-xpi_built := src/install.rdf \
-             src/chrome.manifest \
-             $(wildcard src/content/*.js) \
-             $(wildcard src/content/*.xul) \
-             $(wildcard src/content/*.xml) \
-             $(wildcard src/content/*.css) \
-             $(wildcard src/skin/*.css) \
-             $(wildcard src/skin/*.png) \
-             $(wildcard src/locale/*/*.dtd) \
-             $(wildcard src/locale/*/*.properties)
+xpi_built := install.rdf \
+             chrome.manifest \
+             $(wildcard content/*.js) \
+             $(wildcard content/*.xul) \
+             $(wildcard content/*.xml) \
+             $(wildcard content/*.css) \
+             $(wildcard skin/*.css) \
+             $(wildcard skin/*.png) \
+             $(wildcard locale/*/*.dtd) \
+             $(wildcard locale/*/*.properties)
 
 # This builds everything except for the actual XPI, and then it copies it to the
 # specified profile directory, allowing a quick update that requires no install.
